@@ -32,7 +32,7 @@ function inserirPessoa(){
 //função para alterar os dados no bd
 function alterarPessoa(){
 	$banco = abrirBanco();
-	$sql = "UPDATE contato SET nome='{$_POST["nome"]}',"."nascimento='{$_POST["nascimento"]}', idade='{$_POST["idade"]}', cpf='{$_POST["cpf"]}', email'{$_POST["email"]}', endereco='{$_POST["endereco"]}',"."telefone='{$_POST["telefone"]}' WHERE id='{$_POST["id"]}'";
+	$sql = "UPDATE contato SET nome='{$_POST["nome"]}',"."nascimento='{$_POST["nascimento"]}', idade='{$_POST["idade"]}', cpf='{$_POST["cpf"]}', email='{$_POST["email"]}', endereco='{$_POST["endereco"]}',"."telefone='{$_POST["telefone"]}' WHERE id='{$_POST["id"]}'";
 	$banco->query($sql);
 	$banco->close();
 	voltarIndex();
